@@ -1,0 +1,58 @@
+.customer-section {
+  padding: 5rem;
+}
+
+.customer-divider {
+  width: 65px;
+  height: 5px;
+  background-color: #ffca1d;
+}
+
+.customer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10rem;
+  margin-bottom: 10rem;
+}
+.customer-container p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  max-width: 450px;
+}
+
+.customer-image {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  height: 90px;
+}
+.customer-image img {
+  height: 100%;
+}
+
+.features h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 5rem;
+}
+.features h1 span {
+  color: #ffca1d;
+}
+.features-container {
+  display: flex;
+  justify-content: space-between;
+}
+.feature-card {
+  flex: 1;
+  text-align: center;
+}
+.feature-card h3 {
+  font-size: 1.5rem;
+  color: #2b3377;
+  padding: 2rem;
+}
+.feature-card p {
+  font-size: #585858;
+  padding: 0 5rem;
+}

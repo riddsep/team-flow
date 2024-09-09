@@ -1,15 +1,7 @@
 main {
-  position: relative;
-  overflow: hidden;
   background-image: url("../image/background.png");
   background-size: cover;
-
-  /* background: linear-gradient(
-    100deg,
-    rgb(75, 74, 239) 62%,
-    rgb(250, 250, 255) 38%
-  ); */
-  height: 100dvh;
+  min-height: 100vh;
 }
 
 .background-shape {
@@ -21,11 +13,12 @@ main {
 .hero-section {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 0 0 4.5rem;
+  padding: 0 5rem;
 }
 .description {
   flex: 1;
   max-width: 500px;
+  height: fit-content;
 }
 .description--title {
   padding: 6px 10px;
@@ -62,41 +55,5 @@ hero-container {
   flex: 1;
 }
 .hero-img {
-  max-width: 850px;
-}
-.modal-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: grid;
-  place-items: center;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(75, 74, 239, 0.5);
-  visibility: hidden;
-  z-index: -10;
-}
-.modal-container {
-  display: flex;
-  align-items: center;
-  background-color: #ffffff;
-  width: 30%;
-  height: 30%;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 0 0 #fff;
-}
-.close-icon {
-  width: 30px;
-  align-self: flex-start;
-  cursor: pointer;
-}
-.modal-container h3 {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.open-modal {
-  visibility: visible;
-  z-index: 0;
+  max-width: 750px;
 }

@@ -28,8 +28,7 @@ function setModal() {
         </div>`;
   createModal.innerHTML = componentModal;
 
-  const main = document.querySelector("main");
-  main.appendChild(createModal);
+  document.body.appendChild(createModal);
   closeModal();
 }
 
@@ -37,12 +36,14 @@ function closeModal() {
   const closeModal = document.querySelector(".close-icon");
   closeModal.addEventListener("click", () => {
     createModal.classList.remove("open-modal");
+    document.body.style.removeProperty("overflow");
   });
 }
 
 function openModal() {
   setModal();
   createModal.classList.add("open-modal");
+  document.body.style.overflow = "hidden";
   closeModal();
 }
 
